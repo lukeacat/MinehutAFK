@@ -1,0 +1,31 @@
+{
+  "name": "minehutafk",
+  "version": "1.0.0",
+  "description": "Go afk on a garbage Minehut server!",
+  "main": "src/index.js",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukeacat/MinehutAFK.git"
+  },
+  "keywords": [
+    "minehut",
+    "minecraft",
+    "afk",
+    "games",
+    "automation",
+    "mineflayer"
+  ],
+  "author": "lukeacat",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/lukeacat/MinehutAFK/issues"
+  },
+  "homepage": "https://github.com/lukeacat/MinehutAFK#readme",
+  "dependencies": {
+    "mineflayer": "^2.34.0"
+  }
+}
