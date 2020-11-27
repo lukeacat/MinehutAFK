@@ -1,5 +1,5 @@
 const mineflayer = require("mineflayer")
-const getVersion = "1"
+const getVersion = "2"
 
 function createBot(minehutServer, account) {
 

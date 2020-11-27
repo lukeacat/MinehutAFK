@@ -23,14 +23,20 @@ function bindEvents() {
     })
 
     bot.on("message", rawMessage => {
-        message = rawMessage.toString().split(config.delimiter);
+        const message = rawMessage.toString().split(config.delimiter);
 
         if(message.length < 2) return;
 
         console.log(rawMessage.toString())
 
+        if(!message[0].includes("[")) return;
+
+        const user = message[0].split("[")[1].split("]")[1].trim()
+
+        if(user === bot.username) return;
+        
         if(message[1].includes(bot.username)) {
-            bot.chat(`I'm a bot afking for ${bot.username}!`)
+            bot.chat(`Hello ${user}, I'm a bot afking for ${bot.username}!`)
         } else if(message[1] == "!help") {
             bot.chat(`MinehutAFK v${utils.getVersion}`)
         }
